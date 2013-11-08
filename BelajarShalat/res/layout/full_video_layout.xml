@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            
+            <VideoView 
+                android:id="@+id/video_view"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_horizontal" />
+            
+            <LinearLayout 
+                android:id="@+id/control"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal|top">
+                <Button 
+                    android:id="@+id/stop_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_stop"
+                    android:layout_marginRight="5dp"/>
+                <Button 
+                    android:id="@+id/play_pause_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_play_pause"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>

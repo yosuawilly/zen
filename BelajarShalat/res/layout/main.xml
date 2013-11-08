@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg" >
+
+    <FrameLayout 
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/h">
+        <TextView 
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_title"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal|center_vertical"/>
+        <Button 
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_button"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"/>
+        <Button 
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_button"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"/>
+    </FrameLayout>
+    
+    <LinearLayout 
+        android:id="@+id/linearSubTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/header"
+        android:background="@drawable/liniear_title_background">
+        <TextView 
+            android:id="@+id/subTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="Step Video"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/footer"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:gravity="center_horizontal">
+        <Button 
+            android:id="@+id/home_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_home"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/mainBody"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearSubTitle"
+        android:layout_above="@+id/footer"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        
+    </LinearLayout>
+
+</RelativeLayout>

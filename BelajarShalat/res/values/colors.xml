@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="title_background">#ff222222</color>
+      <color name="foreground1">#FFFFFF</color>
+      <color name="orange">#FF9D00</color>
+      <color name="list_menu_selected_color">#2A7FFF</color>
+    <color name="list_menu_color">#FFFEE1</color>
+     <color name="list_menu_color2">#00FF00</color>
+    
+    <color name="button_footer_selected_color">#2A7FFF</color>
+    <color name="button_footer_color">#FFFEE1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#00FF00</color>
+    <color name="black">#040404</color>
+    <color name="abu">#E8E8E8</color>
+    <color name="biru">#000099</color>
+    <drawable name="altercolor1">#FFFEE1</drawable>
+    <drawable name="altercolor2">#F6F6F6</drawable>
+    <drawable name="transparent">#00ffffff</drawable>
+</resources>

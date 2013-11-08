@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, BelajarShalatActivity!</string>
+    <string name="app_name">Belajar Shalat</string>
+    
+    <string name="default_title">Belajar Shalat</string>
+    
+    <string name="materi">Materi</string>
+    <string name="video">Step Video</string>
+    <string name="full_video">Full Video</string>
+    
+    <string-array name="type">
+        <item>Subuh</item>
+        <item>Dzuhur</item>
+        <item>Ashar</item>
+        <item>Maghrib</item>
+        <item>Isya</item>
+    </string-array>
+    
+    <string-array name="sholat_subuh">
+        <item>Niat Shalat Subuh</item>
+        <item>Berdiri Takbiratul Ihram</item>
+        <item>Doa Iftitah</item>
+        <item>Membaca Al Fatihah</item>
+        <item>Membaca Surat</item>
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud2</item>
+        <item>Berdiri Setelah Sujud</item>
+        <item>Membaca Al Fatihah</item>
+        <item>Membaca Surat</item>
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Qunut</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud2</item>
+        <item>Tahiyat Akhir</item>
+        <item>Salam</item>
+    </string-array>
+    
+    <string-array name="sholat_dzuhur">
+        <item>Niat Shalat Dzuhur</item>
+        <item>Berdiri Takbiratul Ihram</item>
+        <item>Doa Iftitah</item>
+        <item>Membaca Al Fatihah</item>
+        <item>Membaca Surat</item>
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud2</item>
+        <item>Berdiri Setelah Sujud</item>
+        <item>Membaca Al Fatihah</item>
+        <item>Membaca Surat</item>
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud2</item>
+        <item>Tahiyat Awal</item>
+        <item>Berdiri Setelah Tahiyat Awal</item>
+        <item>Membaca Al Fatihah</item>
+        <!--<item>Membaca Surat</item>-->
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud2</item>
+        <item>Berdiri Setelah Sujud</item>
+        <item>Membaca Al Fatihah</item>
+        <!--<item>Membaca Surat</item>-->
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud2</item>
+        <item>Tahiyat Akhir</item>
+        <item>Salam</item>
+    </string-array>
+    
+    <string-array name="sholat_ashar">
+        <item>Niat Shalat Ashar</item>
+        <item>Berdiri Takbiratul Ihram</item>
+        <item>Doa Iftitah</item>
+        <item>Membaca Al Fatihah</item>
+        <item>Membaca Surat</item>
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud2</item>
+        <item>Berdiri Setelah Sujud</item>
+        <item>Membaca Al Fatihah</item>
+        <item>Membaca Surat</item>
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud2</item>
+        <item>Tahiyat Awal</item>
+        <item>Berdiri Setelah Tahiyat Awal</item>
+        <item>Membaca Al Fatihah</item>
+        <!--<item>Membaca Surat</item>-->
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud2</item>
+        <item>Berdiri Setelah Sujud</item>
+        <item>Membaca Al Fatihah</item>
+        <!--<item>Membaca Surat</item>-->
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud2</item>
+        <item>Tahiyat Akhir</item>
+        <item>Salam</item>
+    </string-array>
+    
+    <string-array name="sholat_maghrib">
+        <item>Niat Shalat Maghrib</item>
+        <item>Berdiri Takbiratul Ihram</item>
+        <item>Doa Iftitah</item>
+        <item>Membaca Al Fatihah</item>
+        <item>Membaca Surat</item>
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud2</item>
+        <item>Berdiri Setelah Sujud</item>
+        <item>Membaca Al Fatihah</item>
+        <item>Membaca Surat</item>
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud2</item>
+        <item>Tahiyat Awal</item>
+        <item>Berdiri Setelah Tahiyat Awal</item>
+        <item>Membaca Al Fatihah</item>
+        <!--<item>Membaca Surat</item>-->
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud2</item>
+        <item>Tahiyat Akhir</item>
+        <item>Salam</item>
+    </string-array>
+    
+    <string-array name="sholat_isya">
+        <item>Niat Shalat Isya</item>
+        <item>Berdiri Takbiratul Ihram</item>
+        <item>Doa Iftitah</item>
+        <item>Membaca Al Fatihah</item>
+        <item>Membaca Surat</item>
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud</item>
+        <item>Berdiri Setelah Sujud</item>
+        <item>Membaca Al Fatihah</item>
+        <item>Membaca Surat</item>
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud</item>
+        <item>Tahiyat Awal</item>
+        <item>Berdiri Setelah Tahiyat Awal</item>
+        <item>Membaca Al Fatihah</item>
+        <!--<item>Membaca Surat</item>-->
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud</item>
+        <item>Berdiri Setelah Sujud</item>
+        <item>Membaca Al Fatihah</item>
+        <!--<item>Membaca Surat</item>-->
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud</item>
+        <item>Tahiyat Akhir</item>
+        <item>Salam</item>
+    </string-array>
+
+</resources>
