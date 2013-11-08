@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="stylesheet" href="css/main.css">
+		<script src="cordova-2.6.0.js" type="application/x-javascript" charset="utf-8"></script>
+		
+        
+<script type="text/javascript" charset="utf-8">
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+//playAudio("/android_asset/www/audio/takbir.mp3");
+}
+var my_media = null;
+var isPlaying = false;
+function playAudio(src) {
+if(my_media){
+my_media.stop();
+}
+my_media = new Media("/android_asset/www/audio/"+src, onSuccess, onError);
+my_media.play();
+}
+function pauseAudio() {
+if (my_media) {
+my_media.pause();
+}
+}
+function stopAudio() {
+if (my_media) {
+my_media.stop();
+}
+}
+function onSuccess() {
+//   console.log("playAudio():Audio Success");
+}
+function onError(error) {
+          //  alert('code: '    + error.code    + '\n' + 
+            //      'message: ' + error.message + '\n');
+}
+        </script>
+		
+		
+    </head>
+    <body class="bg">
+
+        <!-- Add your site or application content here -->
+
+		<section id="home_page">   
+        
+        	<header id="header">
+            
+				<div id="header_left">
+					<div id="header_left_home">
+						<a id="topBarIconBack" href="javascript: history.go(-1);" class=""></a>
+					</div>
+				</div>
+				
+				<div id="header_logo"></div>
+				
+				<div id="header_right">
+					<div id="header_right_home">
+						<a id="topBarIconMenu" href="index.html" class="icon-right"></a>
+					</div>
+				</div>
+				
+			</header>
+			
+			<h2 class="juduldoa">
+				Do'a Setelah Adzan
+			</h2>
+
+			<section id="wrap-content">
+            
+				<article class="content">
+					
+<br/>
+
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('habisazan.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div>
+<p align="center"><b>Allaahumma rabba haadzihid da'watid taammati, wash shalaatil qaa imati, Aati Sayidana Muhammadanil wassilata wal fadhilah, Wasy syarafa waddarajatal'Aaliyatar rafii'ata. Wab'abtsul maqaamal mahmuudalladzii wa'adtahu innaka laa tukhliful mii-aada.</b></p>
+<p align="center">{ "Ya Allah, Tuhan yang memiliki panggilan yang sempurna dan shalat yang didirikan. Karuniakanlah kepada junjungan kami Nabi Muhammad wasilah, keutamaan, kemuliaan, dan derajat yang tinggi. Dan angkatlah ia ke tempat yang terpuji sebagaimana telah Engkau janjikan. Sesungguhnya Engkau ya Allah, Dzat yang tidak akan mengubah janji." }</p>
+
+<br/>
+<br/>
+					        <div class="menu_group">
+						
+                            <a href="https://play.google.com/store/apps/details?id=apps.vormalin.com.panduanshalatlengkap">
+                                <div class="menu_item" style="z-index: 100;">
+                                    <img src="img/icon_184.png" class="menu_item_icon">
+                                    <span class="menu_item_caption">Rate Us</span>
+                                    <img src="img/arrow.png" alt="arrow" class="menu_item_arrow">
+                                </div><!-- ENd menu_item -->
+                            </a>
+                            <a href="http://www.Facebook.com/pages/Vormalin-Labs/525339334153146">
+                                <div class="menu_item" style="z-index: 100;">
+                                    <img src="img/Facebook.png" class="menu_item_icon fb">
+                                    <span class="menu_item_caption">Contact Us</span>
+                                    <img src="img/arrow.png" alt="arrow" class="menu_item_arrow">
+                                </div><!-- ENd menu_item -->
+                            </a>
+							<br/>
+                                    
+                                    <center>Developed by: Vormalin Labs</center>
+							</div><!-- ENd menu_group -->
+
+				</article>
+
+			</section>
+
+    </body>
+</html>

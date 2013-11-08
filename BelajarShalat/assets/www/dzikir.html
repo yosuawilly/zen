@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="stylesheet" href="css/main.css">
+		<script src="cordova-2.6.0.js" type="application/x-javascript" charset="utf-8"></script>
+		
+        
+<script type="text/javascript" charset="utf-8">
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+//playAudio("/android_asset/www/audio/takbir.mp3");
+}
+var my_media = null;
+var isPlaying = false;
+function playAudio(src) {
+if(my_media){
+my_media.stop();
+}
+my_media = new Media("/android_asset/www/audio/"+src, onSuccess, onError);
+my_media.play();
+}
+function pauseAudio() {
+if (my_media) {
+my_media.pause();
+}
+}
+function stopAudio() {
+if (my_media) {
+my_media.stop();
+}
+}
+function onSuccess() {
+//   console.log("playAudio():Audio Success");
+}
+function onError(error) {
+          //  alert('code: '    + error.code    + '\n' + 
+            //      'message: ' + error.message + '\n');
+}
+        </script>
+		
+		
+    </head>
+    <body class="bg">
+
+        <!-- Add your site or application content here -->
+
+		<section id="home_page">   
+        
+        	<header id="header">
+            
+				<div id="header_left">
+					<div id="header_left_home">
+						<a id="topBarIconBack" href="javascript: history.go(-1);" class=""></a>
+					</div>
+				</div>
+				
+				<div id="header_logo"></div>
+				
+				<div id="header_right">
+					<div id="header_right_home">
+						<a id="topBarIconMenu" href="index.html" class="icon-right"></a>
+					</div>
+				</div>
+				
+			</header>
+			
+			<h2 class="juduldoa">
+				Dzikir Setelah Sholat
+			</h2>
+
+			<section id="wrap-content">
+            
+				<article class="content">
+					
+<br/>
+Dari Abdul Aziz bin Abdillah bin Baz kepada seluruh orang yang melihat tulisan ini dari kalangan kaum muslimin Merupakan dari perbuatan sunnah, seorang muslim mengucapkan setelah setiap shalat fardu membaca <img src="images/astaghfirullahu.gif"/> ASTAGHFIRULLAH tiga kali, kemudian dilanjutkan dengan:<br/><br/>
+<img style="max-width:100%;" src="images/dzikir01.gif"><br/>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('dzikir.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div> 
+<p class="lafadz">ALLAHUMMA ANTAS SALAAM WA MINKAS SALAAM TABAARAKTA YAA DZAL JALAALI WAL IKRAAM, LAA ILAAHA ILLALLAHU WAHDAHU LAA SYARIIKALAHU, LAHUL MULKU WA LAHUL HAMDU WAHUWA ALAA KULLI SYAI-IN QADIIR, WALAA HAULA WA LAA QUWWATA ILLA BILLAH</p>
+<img src="images/dzikir02.gif"><br/>
+
+<p class="lafadz">LAA ILAAHA ILLALLAHU, WALAA NA'BUDU ILLA IYYAHU, LAHUN NI'MATU WALAHUL FADHLU WALAHUTS TSANAA-UL HASAN, LAA ILAAHA ILLALLAHU, MUKHLISHIINA LAHUDDINA WALAU KARIHAL KAAFIRUUN, ALLAHUMMA LAA MAA NI'A LIMAA A'THOITA, WA LAA MU'TIYA LIMAA MANA'TA, WALAA YANFA'  DZAL JADDI MINKAL JADDU.</p>
+Khusus setelah shalat subuh dan maghrib, bacalah zikir yang dibawah ini sepuluh kali setelah mengucapkan zikir yang di atas:<br/><br/>
+<img src="images/dzikir05.gif"><br/>
+<p class="lafadz">LAA ILAAHA ILLALLAHU WAHDAHU LAA SYARIIKALAHU, LAHUL MULKU WA LAHUL HAMDU YUHYII WAYUMIIT WAHUWA ALAA KULLI SYAI-IN QADIIR</p>
+Kemudian membaca:<br/><br/>
+<img src="images/subhanallahu001.gif"> SUBHANALLAH tigapuluh tiga kali<br/>
+<img src="images/alhamdulillah001.gif"> ALHAMDULILLAH tigapuluh tiga kali<br/>
+<img src="images/allahuakbar.gif"> ALLAHUAKBAR tigapuluh tiga kali<br/><br/>
+untuk melengkapi bilangan menjadi seratus bacalah:<br/><br/>
+<img src="images/dzikir05.gif"><br/>
+<p class="lafadz">LAA ILAAHA ILLALLAHU WAHDAHU LAA SYARIIKALAHU, LAHUL MULKU WA LAHUL HAMDU YUHYII WAYUMIIT WAHUWA ALAA KULLI SYAI-IN QADIIR</p>
+Kemudian membaca ayat kursi<br/><br/>
+<p style="text-align:center;"><img src="images/bismillah.png" style="max-width:100%;"/></p>
+<p style="text-align:center;"><img src="images/8.png" style="max-width:100%;"/></p>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('ayatkursi.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div> 
+<p class="lafadz">ALLAHU LAA ILAAHA ILLA HUWAL HAYYUL QAYYUMU. LAA TA'KHUDZUHUU SINATUW WA LAA NAUUM. LAHUU MAA FISSAMAAWAATI WA MAA FIL ARDHI. MAN DZAL LADZII YASFA'U 'INDAHUU ILLAA BI IDZNIHI. YA'LAMU MAA BAINA AIDIIHIM WA MAA KHALFAHUM. WA LAA YUHITHUUNA BI SYAI-IN MIN 'ILMIHII ILLAA BI MAASYAA-A. WASI'A KURSIYYUHUSSAMAAWAATI WAL ARDHA. WA LAA YA-UDHUU HIFZHUHUMAA WAHUWAL 'ALIYYUL AZHIIM.</p>
+kemudian surat Al Ikhlas<br/><br/>
+<p style="text-align:center;"><img src="images/bismillah.png" style="max-width:100%;"/></p>
+<p style="text-align:center;"><img src="images/3.png" style="max-width:100%;"/></p>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('alikhlas.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div> 
+<p class="lafadz">QUL HUWA ALLAAHU AHAD, ALLAAHU SHAMAD, LAM YALID WALAM YUULAD, WALAM YAKUN LAHU KUFUWAN AHAD.</p>
+Lalu membaca Surat Al Falaq <br/><br/>
+<p style="text-align:center;"><img src="images/bismillah.png" style="max-width:100%;"/></p>
+<p style="text-align:center;"><img src="images/4.png" style="max-width:100%;"/></p>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('alfalaq.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div> 
+<p class="lafadz">QUL A'UUDZU BIRABBIL FALAQ, MIN SYARRI MAA KHALAQ, WAMIN SYARRI GHAASIQIN IDZAA WAQAB, WAMIN SYARRIL NAFFAATSAATI FIL UQAD, WAMIN SYARRI HAASIDIN IDZAA HASAD</p>
+Lalu membaca Surat An Nas<br/><br/>
+<p style="text-align:center;"><img src="images/bismillah.png" style="max-width:100%;"/></p>
+<p style="text-align:center;"><img src="images/5.png" style="max-width:100%;"/></p>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('annas.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div> 
+<p class="lafadz">QUL A'UUDZU BIRABBINNAAS, MALIKINNAAS, ILAAHINNAAS, MIN SYARRIL WASWAASIL KHANNAAS, ALLADZII YUWASWISU FII SHUDUURINNAAS, MINAL JINNATI WAANNAAS.</p>
+kalau seandainya setelah shalat subuh dan maghrib dibaca tiga kali.
+
+<p>Inilah yang lebih baik (afdhal) dan semoga Allah menganugerahkan shalawat dan salam kepada nabi kita Muhammad dan atas keluarga beliau dan sahabat-sahabatnya serta yang mengikutinya dengan baik sampai hari pembalasan.</p>
+<br/>
+<br/>
+					        <div class="menu_group">
+						
+                            <a href="https://play.google.com/store/apps/details?id=apps.vormalin.com.panduanshalatlengkap">
+                                <div class="menu_item" style="z-index: 100;">
+                                    <img src="img/icon_184.png" class="menu_item_icon">
+                                    <span class="menu_item_caption">Rate Us</span>
+                                    <img src="img/arrow.png" alt="arrow" class="menu_item_arrow">
+                                </div><!-- ENd menu_item -->
+                            </a>
+                            <a href="http://www.Facebook.com/pages/Vormalin-Labs/525339334153146">
+                                <div class="menu_item" style="z-index: 100;">
+                                    <img src="img/Facebook.png" class="menu_item_icon fb">
+                                    <span class="menu_item_caption">Contact Us</span>
+                                    <img src="img/arrow.png" alt="arrow" class="menu_item_arrow">
+                                </div><!-- ENd menu_item -->
+                            </a>
+							<br/>
+                                    
+                                    <center>Developed by: Vormalin Labs</center>
+							</div><!-- ENd menu_group -->
+				</article>
+
+			</section>
+
+    </body>
+</html>

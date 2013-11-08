@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="stylesheet" href="css/main.css">
+		<script src="cordova-2.6.0.js" type="application/x-javascript" charset="utf-8"></script>
+		
+        
+<script type="text/javascript" charset="utf-8">
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+//playAudio("/android_asset/www/audio/takbir.mp3");
+}
+var my_media = null;
+var isPlaying = false;
+function playAudio(src) {
+if(my_media){
+my_media.stop();
+}
+my_media = new Media("/android_asset/www/audio/"+src, onSuccess, onError);
+my_media.play();
+}
+function pauseAudio() {
+if (my_media) {
+my_media.pause();
+}
+}
+function stopAudio() {
+if (my_media) {
+my_media.stop();
+}
+}
+function onSuccess() {
+//   console.log("playAudio():Audio Success");
+}
+function onError(error) {
+          //  alert('code: '    + error.code    + '\n' + 
+            //      'message: ' + error.message + '\n');
+}
+</script>
+		
+		
+    </head>
+    <body class="bg">
+
+        <!-- Add your site or application content here -->
+
+		<section id="home_page">   
+        
+        	<header id="header2">
+            
+				<div id="header_left">
+					<div id="header_left_home">
+						<a id="topBarIconBack" href="javascript: history.go(-1);" class=""></a>
+					</div>
+				</div>
+				
+				<div id="header_logo"></div>
+				
+				<div id="header_right">
+					<div id="header_right_home">
+						<a id="topBarIconMenu" href="index.html" class="icon-right"></a>
+					</div>
+				</div>
+				
+			</header>
+			
+			<h2 class="juduldoa">
+				Step Shalat
+			</h2>
+
+			<section id="wrap-content">
+            
+				<article class="content">
+					
+<br/>
+<p align="center"><img style="max-width:100%;" src="images/Sholat01A.jpg"/></p>
+<p align="center"><b>1. Niat Shalat</b></p>
+
+<p align="center"><img style="max-width:100%;" src="images/Sholat02A.jpg"/></p>
+<p align="center"><b>2. Takbiratul Ihram</b></p>
+<p align="center"><img style="max-width:100%;" src="images/takbir.png"/></p>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('takbir.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div>
+<p align="center"><b>Allahu Akbar</b></p>
+
+<p align="center"><img style="max-width:100%;" src="images/Shalat03A.jpg"/></p>
+<p align="center"><b>3. Membaca Do'a Iftitah</b></p>
+<p align="center"><img style="max-width:100%;" src="images/iftitah.jpg"/></p>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('iftitah.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div>
+<p align="center"><b>Allaahu Akbaru Kabiiraa Wal Hamdu Lillaahi Katsiiraa Wasubhaanallaahi Bukrataw Waashiilaa.</b></p>
+<p align="center"><b>Innii Wajjahtu Wajhiya Lilladzii Fatharas Samaawaati Wal Ardha Haniifam Muslimaw Wamaa Ana Minal Musyrikiin</b></p>
+<p align="center"><b>Inna Shalaatii Wanusukii Wamahyaaya Wamamaatii Lillaahirabbil 'Aalamiin.</b></p>
+<p align="center"><b>Laa Syariika Lahuu Wa Bidzaalika Umirtu Wa Ana Minal Muslimiin.</b></p>
+
+<p align="center"><img style="max-width:100%;" src="images/Shalat03A.jpg"/></p>
+<p align="center"><b>4. Membaca Surat Al-Fatihah dan Surat Lainnya</b></p>
+<p align="center"><img style="max-width:100%;" src="images/alfatiha.png"/></p>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('alfatihah.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div>
+<p align="center"><b>BISMILLAAHIR RAHMAANIR RAHIIM.</b></p>
+<p align="center"><b>Al Hamdu Lillaahi Rabbil 'Aalamiin.</b></p>
+<p align="center"><b>Arrahmaanir Rahiim.</b></p>
+<p align="center"><b>Maalikiyaumiddiin.</b></p>
+<p align="center"><b>Iyyaaka Na'budu Waiyyaaka Nasta'iinu.</b></p>
+<p align="center"><b>Ihdinash Shiraathal Mustaqiim.</b></p>
+<p align="center"><b>Shiraathal Ladziina An'amta 'Alaihim Ghairil Maghdhuubi 'Alaihim Waladhdhaalliin. Aamiin.</b></p>
+
+<p align="center"><img style="max-width:100%;" src="images/Shalat04A.jpg"/></p>
+<p align="center"><b>5. Ruku</b></p>
+<p align="center"><img style="max-width:100%;" src="images/ruku.png"/></p>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('ruku.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div>
+<p align="center"><b>Subhaana Rabbiyal 'Adziimi Wa Bihamdih. - 3 X</b></p>
+<p align="center"><img style="max-width:100%;" src="images/Shalat05A.jpg"/></p>
+<p align="center"><b>6. I'tidal</b></p>
+<p align="center"><b>Sami'allaahu Liman Hamidah.</b></p>
+<p align="center"><img style="max-width:100%;" src="images/itidal.png"/></p>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('itidal.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div>
+<p align="center"><b>Rabbanaa Lakal Hamdu Mil'us Samaawati Wa Mil 'Ulardhi Wa Mil 'Umaasyi'ta Min Syai'in Ba'du.</b></p>
+
+<p align="center"><img style="max-width:100%;" src="images/Shalat07A.jpg"/></p>
+<p align="center"><b>7. Sujud</b></p>
+<p align="center"><img style="max-width:100%;" src="images/sujud.png"/></p>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('sujud.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div>
+<p align="center"><b>Subhaana Rabbiyal A'Laa Wa Bihamdih. - 3 X</b></p>
+
+<p align="center"><img style="max-width:100%;" src="images/Shalat08A.jpg"/></p>
+<p align="center"><b>8. Duduk diantara dua sujud</b></p>
+<p align="center"><img style="max-width:100%;" src="images/duduk.png"/></p>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('duduk.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div>
+<p align="center"><b>Rabbighfirlii Warhamnii Wajburnii Warfa'nii Warzuqnii Wahdinii Wa'aafinii Wa'fu 'Annii.</b></p>
+
+<p align="center"><img style="max-width:100%;" src="images/Shalat09A.jpg"/></p>
+<p align="center"><b>9. Sujud</b></p>
+<p align="center"><img style="max-width:100%;" src="images/sujud.png"/></p>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('sujud.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div>
+<p align="center"><b>Subhaana Rabbiyal A'Laa Wa Bihamdih. - 3 X</b></p>
+
+<p align="center"><img style="max-width:100%;" src="images/Shalat10A.jpg"/></p>
+<p align="center"><b>10. Tahiyat Awal</b></p>
+<p align="center"><img style="max-width:100%;" src="images/tahiyat_awal.png"/></p>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('tahiyat_awal.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div>
+<p align="center"><b>Attahiyyaatul Mubaarakaatush Shalawatuth Thayyibaatu Lillaah.</b></p>
+<p align="center"><b>Assalaamu 'Alaika Ayyuhan Nabiyyu Warahmatullaahi Wabarakaatuh.</b></p>
+<p align="center"><b>Assalaamu 'Alainaa Wa 'Alaa 'Ibadadillaahish Shaalihiin.</b></p>
+<p align="center"><b>Asyhadu Allaa Ilaaha Illallaah. Wa Asyhadu Anna Muhammadar Rasuulullaah.</b></p>
+<p align="center"><b>Allaahumma Shalli 'Alaa Sayyidinaa Muhammad.</b></p>
+
+<p align="center"><img style="max-width:100%;" src="images/Shalat11A.jpg"/></p>
+<p align="center"><b>11. Tahiyat Akhir</b></p>
+<p align="center"><img style="max-width:100%;" src="images/tahyat_akhir.png"/></p>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('tahiyat_akhir.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div>
+<p align="center"><b>Attahiyyaatul Mubaarakaatush Shalawatuth Thayyibaatu Lillaah.</b></p>
+<p align="center"><b>Assalaamu 'Alaika Ayyuhan Nabiyyu Warahmatullaahi Wabarakaatuh.</b></p>
+<p align="center"><b>Assalaamu 'Alainaa Wa 'Alaa 'Ibadadillaahish Shaalihiin.</b></p>
+<p align="center"><b>Asyhadu Allaa Ilaaha Illallaah. Wa Asyhadu Anna Muhammadar Rasuulullaah.</b></p>
+<p align="center"><b>Allaahumma Shalli 'Alaa Sayyidinaa Muhammad ( Tasyahud Awal )Wa 'Alaa Aali Sayyidinaa Muhammad.</b></p>
+<p align="center"><b>Kamaa Shallaitaa 'Alaa Sayyidinaa Ibraahiim Wa 'Alaa Aali Sayyidinaa Ibraahiim.</b></p>
+<p align="center"><b>Wa Baarik 'Alaa Sayyidinaa Muhammad Wa 'Alaa Aali Sayyidinaa Muhammad.</b></p>
+<p align="center"><b>Kamaa Baarakta 'Alaa Sayyidinaa Ibraahiim Wa 'Alaa Aali Sayyidinaa Ibraahiim.</b></p>
+<p align="center"><b>Fil 'Aalamiina Innaka Hamiidummajiid.</b></p>
+
+<p align="center"><img style="max-width:100%;" src="images/Shalat12A.jpg"/></p>
+<p align="center"><b>12. Salam</b></p>
+<p align="center"><img style="max-width:100%;" src="images/salam.png"/></p>
+<div id="player" style="display: block">
+  <button class="playbutton" onClick="playAudio('salam.mp3')"></button>
+  <button class="pausebutton" onClick="pauseAudio()"></button>
+</div>
+<p align="center"><b>As-salamu 'alaikum warahmatullahi wabarakatuh</b></p>
+<br/>
+<!--<p>Setelah selesai shalat, lanjutkan dengan membaca Dzikir setelah shalat</p>
+<br/>
+<br/>-->
+<!--					        <div class="menu_group">
+						
+                            <a href="https://play.google.com/store/apps/details?id=apps.vormalin.com.panduanshalatlengkap">
+                                <div class="menu_item" style="z-index: 100;">
+                                    <img src="img/icon_184.png" class="menu_item_icon">
+                                    <span class="menu_item_caption">Rate Us</span>
+                                    <img src="img/arrow.png" alt="arrow" class="menu_item_arrow">
+                                </div> ENd menu_item 
+                            </a>
+                            <a href="http://www.Facebook.com/pages/Vormalin-Labs/525339334153146">
+                                <div class="menu_item" style="z-index: 100;">
+                                    <img src="img/Facebook.png" class="menu_item_icon fb">
+                                    <span class="menu_item_caption">Contact Us</span>
+                                    <img src="img/arrow.png" alt="arrow" class="menu_item_arrow">
+                                </div> ENd menu_item 
+                            </a>
+							<br/>
+                                    
+                                    <center>Developed by: Vormalin Labs</center>
+							</div> ENd menu_group -->
+
+				</article>
+
+			</section>
+                    
+             </section>
+    </body>
+</html>
