@@ -65,6 +65,22 @@ public class MateriActivity extends BaseActivity implements Functional,OnClickLi
 			return "file:///android_asset/www/annas.html";
 		} else if(type.equals(Constant.IKHLAS)){
 			return "file:///android_asset/www/alikhlas.html";
+		} else if(type.equals(Constant.PENGERTIAN_SHALAT)){
+			return "file:///android_asset/www/pengertian_shalat.html";
+		} else if(type.equals(Constant.SYARAT_SHALAT)){
+			return "file:///android_asset/www/syarat_shalat.html";
+		} else if(type.equals(Constant.RUKUN_SHALAT)){
+			return "file:///android_asset/www/rukun_shalat.html";
+		} else if(type.equals(Constant.YANG_MEMBATALKAN_SHALAT)){
+			return "file:///android_asset/www/yang_membatalkan_shalat.html";
+		} else if(type.equals(Constant.PERBEDAAN_SHALAT)){
+			return "file:///android_asset/www/perbedaan_laki_wanita_shalat.html";
+		} else if(type.equals(Constant.WAKTU_SHALAT)){
+			return "file:///android_asset/www/waktu_shalat.html";
+		} else if(type.equals(Constant.MAKMUM_MASBUQ)){
+			return "file:///android_asset/www/makmum_masbuq.html";
+		} else if(type.equals(Constant.SHALAT_JUMAT)){
+			return "file:///android_asset/www/shalat_jumat.html";
 		}
 		return "";
 	}

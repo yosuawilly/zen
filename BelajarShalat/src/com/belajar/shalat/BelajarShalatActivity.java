@@ -3,7 +3,6 @@ package com.belajar.shalat;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.belajar.shalat.activity.MainMenuActivity;
 import com.belajar.shalat.activity.TutorActivity;
 import com.belajar.shalat.activity.base.BaseMainActivity;
 import com.belajar.shalat.adapter.MenuListAdapter;

@@ -42,6 +42,30 @@
         <item>Salam</item>
     </string-array>
     
+    <string-array name="sholat_subuh_tanpa_qunut">
+        <item>Niat Shalat Subuh</item>
+        <item>Berdiri Takbiratul Ihram</item>
+        <item>Doa Iftitah</item>
+        <item>Membaca Al Fatihah</item>
+        <item>Membaca Surat</item>
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud2</item>
+        <item>Berdiri Setelah Sujud</item>
+        <item>Membaca Al Fatihah</item>
+        <item>Membaca Surat</item>
+        <item>Ruku</item>
+        <item>I\'tidal</item>
+        <!--<item>Qunut</item>-->
+        <item>Sujud</item>
+        <item>Duduk Antara Dua Sujud</item>
+        <item>Sujud2</item>
+        <item>Tahiyat Akhir</item>
+        <item>Salam</item>
+    </string-array>
+    
     <string-array name="sholat_dzuhur">
         <item>Niat Shalat Dzuhur</item>
         <item>Berdiri Takbiratul Ihram</item>

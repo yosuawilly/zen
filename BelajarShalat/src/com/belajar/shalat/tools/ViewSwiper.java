@@ -17,7 +17,6 @@ import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.VideoView;
 
 public class ViewSwiper extends Fragment implements OnClickListener, OnCompletionListener{

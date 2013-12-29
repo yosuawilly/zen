@@ -22,6 +22,7 @@ public class FullVideoActivity extends BaseMainActivity implements OnCompletionL
 //	Uri uriVideo;
 	boolean pause = false;
 	int currentId = 0;
+	boolean useQunut = true;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +38,15 @@ public class FullVideoActivity extends BaseMainActivity implements OnCompletionL
 		subTitle.setText("Full Video");
 		
 		typeShalat = getIntent().getStringExtra("type");
+		useQunut = getIntent().getBooleanExtra("useQunut", true);
 		txtTitle.setText(Constant.getTitle(typeShalat));
 		
 		stepShalat = new ArrayList<String>();
 		if(typeShalat.equals(Constant.SUBUH)){
+			if(useQunut)
 			stepShalat.addAll(Arrays.asList(getResources().getStringArray(R.array.sholat_subuh)));
+			else 
+			stepShalat.addAll(Arrays.asList(getResources().getStringArray(R.array.sholat_subuh_tanpa_qunut)));
 		} else if(typeShalat.equals(Constant.DZUHUR)){
 			stepShalat.addAll(Arrays.asList(getResources().getStringArray(R.array.sholat_dzuhur)));
 		} else if(typeShalat.equals(Constant.ASHAR)){

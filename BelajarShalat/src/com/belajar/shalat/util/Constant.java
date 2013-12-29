@@ -12,6 +12,15 @@ public class Constant {
 	public static final String NIAT = "niat";
 	public static final String QUNUT = "qunut";
 	
+	public static final String PENGERTIAN_SHALAT = "pengertian_shalat";
+	public static final String SYARAT_SHALAT = "syarat_shalat";
+	public static final String RUKUN_SHALAT = "rukun_shalat";
+	public static final String YANG_MEMBATALKAN_SHALAT = "yang_membatalkan_shalat";
+	public static final String PERBEDAAN_SHALAT = "perbedaan_shalat";
+	public static final String WAKTU_SHALAT = "waktu_shalat";
+	public static final String MAKMUM_MASBUQ = "makmum_masbuq";
+	public static final String SHALAT_JUMAT = "shalat_jumat";
+	
 	public static final String FATIHAH = "fatihah";
 	public static final String FALAQ = "falaq";
 	public static final String NAS = "nas";
