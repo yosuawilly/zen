@@ -1,5 +1,7 @@
 package com.belajar.shalat.util;
 
+import com.belajar.shalat.R;
+
 public class Constant {
 	
 	public static final String SUBUH = "subuh";
@@ -42,5 +44,18 @@ public class Constant {
 	}
 	
 	public static final String BASE_PATH = "android.resource://com.belajar.shalat/raw/";
+	
+	public static final int[]BACAAN_SURAT = new int[]{
+		R.raw.surat_al_fill,
+		R.raw.surat_al_humaza,
+		R.raw.surat_al_ikhlas,
+		R.raw.surat_al_kaafirun,
+		R.raw.surat_al_kautsar,
+		R.raw.surat_al_maa_uun,
+		R.raw.surat_al_massad,
+		R.raw.surat_an_nasr,
+		R.raw.surat_at_takaathur,
+		R.raw.surat_qarisy
+	};
 
 }

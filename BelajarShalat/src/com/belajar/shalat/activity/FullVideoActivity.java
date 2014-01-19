@@ -3,6 +3,8 @@ package com.belajar.shalat.activity;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
+
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.net.Uri;
@@ -137,27 +139,28 @@ public class FullVideoActivity extends BaseMainActivity implements OnCompletionL
 		} else if(step.contains("Al Fatihah")){
 			uri = Uri.parse(Constant.BASE_PATH+R.raw.alfatihah);
 		} else if(step.contains("Surat")){
-			if(typeShalat.equalsIgnoreCase(Constant.SUBUH)){
-				if(currentId==4){
-					uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_al_maa_uun);
-				} else uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_al_kautsar);
-			} else if(typeShalat.equalsIgnoreCase(Constant.DZUHUR)){
-				if(currentId==4){
-					uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_al_kaafirun);
-				} else uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_an_nasr);
-			} else if(typeShalat.equalsIgnoreCase(Constant.ASHAR)){
-				if(currentId==4){
-					uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_al_massad);
-				} else uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_qarisy);
-			} else if(typeShalat.equalsIgnoreCase(Constant.MAGHRIB)){
-				if(currentId==4){
-					uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_al_humaza);
-				} else uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_al_ikhlas);
-			} else if(typeShalat.equalsIgnoreCase(Constant.ISYA)){
-				if(currentId==4){
-					uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_al_fill);
-				} else uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_at_takaathur);
-			}
+			uri = getRandomSuratUri();
+//			if(typeShalat.equalsIgnoreCase(Constant.SUBUH)){
+//				if(currentId==4){
+//					uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_al_maa_uun);
+//				} else uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_al_kautsar);
+//			} else if(typeShalat.equalsIgnoreCase(Constant.DZUHUR)){
+//				if(currentId==4){
+//					uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_al_kaafirun);
+//				} else uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_an_nasr);
+//			} else if(typeShalat.equalsIgnoreCase(Constant.ASHAR)){
+//				if(currentId==4){
+//					uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_al_massad);
+//				} else uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_qarisy);
+//			} else if(typeShalat.equalsIgnoreCase(Constant.MAGHRIB)){
+//				if(currentId==4){
+//					uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_al_humaza);
+//				} else uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_al_ikhlas);
+//			} else if(typeShalat.equalsIgnoreCase(Constant.ISYA)){
+//				if(currentId==4){
+//					uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_al_fill);
+//				} else uri = Uri.parse(Constant.BASE_PATH+R.raw.surat_at_takaathur);
+//			}
 		} else if(step.contains("Ruku")){
 			uri = Uri.parse(Constant.BASE_PATH+R.raw.ruku);
 		} else if(step.contains("I'tidal")){
@@ -184,6 +187,13 @@ public class FullVideoActivity extends BaseMainActivity implements OnCompletionL
 		else {
 			uri = Uri.parse(Constant.BASE_PATH+R.raw.doa);
 		}
+		return uri;
+	}
+	
+	private Uri getRandomSuratUri(){
+		int min = 0, max = Constant.BACAAN_SURAT.length - 1;
+		int randomIdx = new Random().nextInt((max - min) + 1) + min;
+		Uri uri = Uri.parse(Constant.BASE_PATH + Constant.BACAAN_SURAT[randomIdx]);
 		return uri;
 	}
 

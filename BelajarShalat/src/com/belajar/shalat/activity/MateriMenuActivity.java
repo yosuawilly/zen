@@ -28,15 +28,15 @@ public class MateriMenuActivity extends BelajarShalatActivity{
 	public void configureFunctionComponents() {
 		super.configureFunctionComponents();
 		menus.clear();
+		menus.add(new Menu("Pengertian Shalat"));
+		menus.add(new Menu("Syarat-syarat Shalat"));
+		menus.add(new Menu("Rukun Shalat"));
+		menus.add(new Menu("Yang Membatalkan Shalat"));
+		menus.add(new Menu("Perbedaan Laki-laki & perempuan dalam Shalat"));
     	menus.add(new Menu("Step Shalat"));
     	menus.add(new Menu("Niat Shalat"));
-    	menus.add(new Menu("Do'a Qunut"));
     	menus.add(new Menu("Surat-surat pendek"));
-    	menus.add(new Menu("Pengertian Shalat"));
-    	menus.add(new Menu("Syarat-syarat Shalat"));
-    	menus.add(new Menu("Rukun Shalat"));
-    	menus.add(new Menu("Yang Membatalkan Shalat"));
-    	menus.add(new Menu("Perbedaan Laki-laki & wanita dalam Shalat"));
+    	menus.add(new Menu("Do'a Qunut"));
     	menus.add(new Menu("Waktu-waktu Shalat"));
     	menus.add(new Menu("Makmum Masbuq"));
     	menus.add(new Menu("Shalat Jumat"));

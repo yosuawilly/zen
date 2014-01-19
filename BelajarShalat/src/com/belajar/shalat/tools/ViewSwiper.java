@@ -2,6 +2,8 @@ package com.belajar.shalat.tools;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+
 import com.belajar.shalat.R;
 import com.belajar.shalat.util.Constant;
 
@@ -101,27 +103,28 @@ public class ViewSwiper extends Fragment implements OnClickListener, OnCompletio
 		} else if(step.contains("Al Fatihah")){
 			uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.alfatihah);
 		} else if(step.contains("Surat")){
-			if(typeShalat.equalsIgnoreCase(Constant.SUBUH)){
-				if(pageNumber==4){
-					uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_al_maa_uun);
-				} else uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_al_kautsar);
-			} else if(typeShalat.equalsIgnoreCase(Constant.DZUHUR)){
-				if(pageNumber==4){
-					uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_al_kaafirun);
-				} else uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_an_nasr);
-			} else if(typeShalat.equalsIgnoreCase(Constant.ASHAR)){
-				if(pageNumber==4){
-					uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_al_massad);
-				} else uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_qarisy);
-			} else if(typeShalat.equalsIgnoreCase(Constant.MAGHRIB)){
-				if(pageNumber==4){
-					uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_al_humaza);
-				} else uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_al_ikhlas);
-			} else if(typeShalat.equalsIgnoreCase(Constant.ISYA)){
-				if(pageNumber==4){
-					uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_al_fill);
-				} else uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_at_takaathur);
-			}
+			uri = getRandomSuratUri();
+//			if(typeShalat.equalsIgnoreCase(Constant.SUBUH)){
+//				if(pageNumber==4){
+//					uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_al_maa_uun);
+//				} else uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_al_kautsar);
+//			} else if(typeShalat.equalsIgnoreCase(Constant.DZUHUR)){
+//				if(pageNumber==4){
+//					uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_al_kaafirun);
+//				} else uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_an_nasr);
+//			} else if(typeShalat.equalsIgnoreCase(Constant.ASHAR)){
+//				if(pageNumber==4){
+//					uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_al_massad);
+//				} else uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_qarisy);
+//			} else if(typeShalat.equalsIgnoreCase(Constant.MAGHRIB)){
+//				if(pageNumber==4){
+//					uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_al_humaza);
+//				} else uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_al_ikhlas);
+//			} else if(typeShalat.equalsIgnoreCase(Constant.ISYA)){
+//				if(pageNumber==4){
+//					uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_al_fill);
+//				} else uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_at_takaathur);
+//			}
 //			uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.surat_al_massad);
 		} else if(step.contains("Ruku")){
 			uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.ruku);
@@ -149,6 +152,13 @@ public class ViewSwiper extends Fragment implements OnClickListener, OnCompletio
 		else {
 			uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.doa);
 		}
+		return uri;
+	}
+	
+	private Uri getRandomSuratUri(){
+		int min = 0, max = Constant.BACAAN_SURAT.length - 1;
+		int randomIdx = new Random().nextInt((max - min) + 1) + min;
+		Uri uri = Uri.parse(Constant.BASE_PATH + Constant.BACAAN_SURAT[randomIdx]);
 		return uri;
 	}
 	
