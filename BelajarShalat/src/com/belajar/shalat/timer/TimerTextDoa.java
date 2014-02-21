@@ -58,6 +58,7 @@ public abstract class TimerTextDoa implements TimerSubTitle {
 	}
 	@Override
 	public void stop() {
+		if(downTimer!=null)
 		downTimer.cancel();
 		idx = 0;
         isTimerRunning = false;

@@ -106,7 +106,10 @@ public class TutorActivity extends BaseMainFragmenActivity implements ViewClickL
 	
 	@Override
 	public void onBackPressed() {
-		if(tutorPager.getCurrentItem() == 0) super.onBackPressed();
+		if(tutorPager.getCurrentItem() == 0) {
+			swiperAdapter.getListSwiper().get(tutorPager.getCurrentItem()).stopTimer();
+			super.onBackPressed();
+		}
 	    else {
 	    	if(stepShalat.get(tutorPager.getCurrentItem()-1).equals("Qunut")){
 	    		if(!useQunut) {

@@ -9,7 +9,11 @@ import com.belajar.shalat.timer.TimerListener;
 import com.belajar.shalat.timer.TimerSubTitle;
 import com.belajar.shalat.timer.doa.TimerIftitah;
 import com.belajar.shalat.timer.doa.TimerIktidal;
+import com.belajar.shalat.timer.doa.TimerNiatAshar;
+import com.belajar.shalat.timer.doa.TimerNiatIsya;
+import com.belajar.shalat.timer.doa.TimerNiatMaghrib;
 import com.belajar.shalat.timer.doa.TimerNiatSubuh;
+import com.belajar.shalat.timer.doa.TimerNiatZuhur;
 import com.belajar.shalat.timer.doa.TimerQunut;
 import com.belajar.shalat.timer.doa.TimerRukuk;
 import com.belajar.shalat.timer.doa.TimerSujud;
@@ -30,13 +34,13 @@ import com.belajar.shalat.timer.surat.TimerAttakathur;
 import com.belajar.shalat.timer.surat.TimerQarisy;
 import com.belajar.shalat.util.Constant;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,6 +50,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.VideoView;
 
+@SuppressLint("ValidFragment") 
 public class ViewSwiper extends Fragment implements OnClickListener, OnCompletionListener, TimerListener{
 	
 	Context context;
@@ -121,12 +126,16 @@ public class ViewSwiper extends Fragment implements OnClickListener, OnCompletio
 			timerSubTitle = new TimerNiatSubuh(this);
 		} else if(step.contains("Niat Shalat Dzuhur")){
 			uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.niat_duhur);
+			timerSubTitle = new TimerNiatZuhur(this);
 		} else if(step.contains("Niat Shalat Ashar")){
 			uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.niat_ashar);
+			timerSubTitle = new TimerNiatAshar(this);
 		} else if(step.contains("Niat Shalat Maghrib")){
 			uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.niat_maghrib);
+			timerSubTitle = new TimerNiatMaghrib(this);
 		} else if(step.contains("Niat Shalat Isya")){
 			uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.niat_isya);
+			timerSubTitle = new TimerNiatIsya(this);
 		}
 		else if(step.contains("Takbiratul Ihram")){
 			uri = Uri.parse("android.resource://"+getActivity().getPackageName()+"/"+R.raw.takbirotulikhrom);
@@ -287,6 +296,10 @@ public class ViewSwiper extends Fragment implements OnClickListener, OnCompletio
 	@Override
 	public void onCompletion(MediaPlayer arg0) {
 //		Toast.makeText(context, "finish", Toast.LENGTH_LONG).show();
+	}
+	
+	public void stopTimer(){
+		if(timerSubTitle!=null) timerSubTitle.stop();
 	}
 
 	@Override
